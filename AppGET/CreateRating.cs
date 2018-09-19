@@ -14,7 +14,7 @@ namespace AppGET
         [FunctionName("CreateRating")]
         public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get","post", Route = null)]HttpRequestMessage req, TraceWriter log)
         {
-            log.Info("C# HTTP trigger function processed a request.");
+            log.Info("C# HTTP trigger from function processed a request.");
             var isSuccess = false;
             // parse query parameter
             string name = req.GetQueryNameValuePairs()
