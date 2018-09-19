@@ -16,7 +16,7 @@ namespace AppGET
         [FunctionName("GetRating")]
         public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequestMessage req, TraceWriter log)
         {
-            log.Info("C# HTTP trigger function processed a request testing CD.");
+            log.Info("C# HTTP trigger function processed a request testing CD");
             Document response=new Document();
             string jresponse=string.Empty;
             // parse query parameter
